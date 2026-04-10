@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Image, PhoneCall } from 'lucide-react';
 import logo from '@/assets/logo.jpeg';
 
 const navLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'Services', path: '/services' },
-  { label: 'Gallery', path: '/gallery' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Home', path: '/', icon: Home },
+  { label: 'Services', path: '/services', icon: Briefcase },
+  { label: 'Gallery', path: '/gallery', icon: Image },
+  { label: 'Contact', path: '/contact', icon: PhoneCall },
 ];
 
 const Navbar = () => {
@@ -43,19 +43,18 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm tracking-wider uppercase transition-colors duration-300 hover:text-gold ${location.pathname === link.path ? 'text-gold' : 'text-cream-dark'}`}
+                className={`flex items-center gap-1.5 text-sm tracking-wider uppercase transition-colors duration-300 hover:text-gold ${location.pathname === link.path ? 'text-gold' : 'text-cream-dark'}`}
               >
+                <link.icon size={16} />
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://wa.me/919494700011?text=Hi%20CozyCoo!%20I%20would%20like%20to%20book%20a%20session."
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
               className="shimmer-btn gold-gradient px-6 py-2.5 rounded-full text-sm font-semibold text-background tracking-wider uppercase"
             >
               Book Now
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Toggle */}
@@ -72,19 +71,18 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`block text-center text-sm tracking-wider uppercase py-2 transition-colors ${location.pathname === link.path ? 'text-gold' : 'text-cream-dark'}`}
+              className={`flex items-center justify-center gap-2 text-sm tracking-wider uppercase py-2 transition-colors ${location.pathname === link.path ? 'text-gold' : 'text-cream-dark'}`}
             >
+              <link.icon size={16} />
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://wa.me/919494700011?text=Hi%20CozyCoo!%20I%20would%20like%20to%20book%20a%20session."
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contact"
             className="block text-center shimmer-btn gold-gradient px-6 py-3 rounded-full text-sm font-semibold text-background tracking-wider uppercase mx-auto max-w-xs"
           >
             Book Now
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
