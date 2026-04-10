@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import heroNewborn from '@/assets/hero-newborn.jpg';
 import heroMaternity from '@/assets/hero-maternity.jpg';
 import heroKids from '@/assets/hero-kids.jpg';
@@ -36,20 +37,18 @@ const HeroSection = () => {
                 Capturing the beauty of newborns, maternity journeys, childhood memories, and hand casting keepsakes at CozyCoo Baby Studio in Kakinada.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a
-                  href="https://wa.me/919494700011?text=Hi%20CozyCoo!%20I%20would%20like%20to%20book%20a%20session."
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/contact"
                   className="shimmer-btn gold-gradient px-8 py-4 rounded-full text-sm font-semibold text-background tracking-wider uppercase inline-block text-center gold-glow"
                 >
                   ✨ Book Your Session
-                </a>
-                <a
-                  href="/gallery"
+                </Link>
+                <Link
+                  to="/gallery"
                   className="px-8 py-4 rounded-full text-sm font-semibold text-gold tracking-wider uppercase border border-gold/30 hover:border-gold/60 hover:bg-gold/5 transition-all duration-300 inline-block text-center"
                 >
                   View Gallery
-                </a>
+                </Link>
               </div>
             </div>
           </div>
