@@ -66,7 +66,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-cream font-semibold mb-1">Email</h3>
-                    <a href="mailto:3knotsstories@gmail.com" className="text-muted-foreground text-sm hover:text-gold transition-colors">3knotsstories@gmail.com</a>
+                    <a href="mailto:Cozycoobaystudio@gmail.com" className="text-muted-foreground text-sm hover:text-gold transition-colors">Cozycoobaystudio@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex gap-4">
