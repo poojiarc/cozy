@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Phone, Home, Briefcase, Image as ImageIcon, PhoneCall, MapPin, Mail, Clock, Heart } from 'lucide-react';
-import logo from '@/assets/logo.jpeg';
+import logo from '@/assets/logo-transparent.png';
 
 const Footer = () => {
   return (
@@ -9,12 +9,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="CozyCoo Baby Studio" className="h-12 rounded-full" width={48} height={48} />
-              <div>
-                <span className="font-heading text-lg gold-text font-semibold">CozyCoo</span>
-                <span className="block text-xs text-muted-foreground tracking-widest uppercase">Baby Studio</span>
-              </div>
+            <div className="flex items-center gap-2">
+              <img src={logo} alt="CozyCoo Baby Studio" className="h-14" width={56} height={56} />
+              <span className="font-heading text-lg gold-text font-semibold tracking-wide">CozyCoo Baby Studio</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Premium baby photography studio in Kakinada. Newborn, maternity, kids photography and hand casting keepsakes.

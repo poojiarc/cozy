@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home, Briefcase, Image, PhoneCall } from 'lucide-react';
-import logo from '@/assets/logo.jpeg';
+import logo from '@/assets/logo-transparent.png';
 
 const navLinks = [
   { label: 'Home', path: '/', icon: Home },
@@ -29,12 +29,9 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-background/95 backdrop-blur-md border-b border-gold/10' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="CozyCoo Baby Studio" className="h-10 lg:h-14 rounded-full" width={56} height={56} />
-            <div className="hidden sm:block">
-              <span className="font-heading text-lg gold-text font-semibold">CozyCoo</span>
-              <span className="block text-xs text-muted-foreground tracking-widest uppercase">Baby Studio</span>
-            </div>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="CozyCoo Baby Studio" className="h-12 lg:h-16" width={64} height={64} />
+            <span className="font-heading text-lg lg:text-xl gold-text font-semibold tracking-wide">CozyCoo Baby Studio</span>
           </Link>
 
           {/* Desktop Nav */}
