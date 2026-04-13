@@ -29,9 +29,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-background/95 backdrop-blur-md border-b border-gold/10' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="CozyCoo Baby Studio" className="h-12 lg:h-16" width={64} height={64} />
-            <span className="font-heading text-lg lg:text-xl gold-text font-semibold tracking-wide">CozyCoo Baby Studio</span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="CozyCoo Baby Studio" className="h-16 lg:h-20" width={80} height={80} />
           </Link>
 
           {/* Desktop Nav */}
