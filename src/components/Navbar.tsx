@@ -28,13 +28,28 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-background/95 backdrop-blur-md border-b border-gold/10' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center">
-            <img src={logo} alt="CozyCoo Baby Studio" className="h-24 lg:h-28" width={112} height={112} />
+        {/* Mobile Header */}
+        <div className="flex lg:hidden items-center justify-between h-16">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-cream w-8">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2">
+            <img src={logo} alt="CozyCoo Baby Studio" className="h-20" width={80} height={80} />
+          </Link>
+          <div className="w-8" />
+        </div>
+
+        {/* Desktop Header */}
+        <div className="hidden lg:flex items-center justify-between h-24">
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="CozyCoo Baby Studio" className="h-32" width={128} height={128} />
+            <div className="flex flex-col">
+              <span className="font-heading text-2xl gold-text font-bold tracking-widest uppercase">CozyCoo</span>
+              <span className="text-xs text-cream-dark tracking-[0.3em] uppercase">Baby Studio</span>
+            </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -52,11 +67,6 @@ const Navbar = () => {
               Book Now
             </Link>
           </div>
-
-          {/* Mobile Toggle */}
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-cream">
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </div>
 
