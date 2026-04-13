@@ -34,7 +34,7 @@ const Navbar = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <Link to="/" className="absolute left-1/2 -translate-x-1/2">
-            <img src={logo} alt="CozyCoo Baby Studio" className="h-20" width={80} height={80} />
+            <img src={logo} alt="CozyCoo Baby Studio" className="h-28" width={112} height={112} />
           </Link>
           <div className="w-8" />
         </div>
