@@ -44,8 +44,15 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="CozyCoo Baby Studio" className="h-32" width={128} height={128} />
             <div className="flex flex-col">
-              <span className="font-heading text-2xl gold-text font-bold tracking-widest uppercase">CozyCoo</span>
-              <span className="text-xs text-cream-dark tracking-[0.3em] uppercase">Baby Studio</span>
+              <div className="flex flex-col overflow-visible">
+  <span className="signature-logo gold-text">
+    Cozy Coo
+  </span>
+  <span className="signature-sub gold-text">
+    Baby Studio
+  </span>
+</div>
+              
             </div>
           </Link>
 

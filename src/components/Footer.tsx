@@ -9,10 +9,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <img src={logo} alt="CozyCoo Baby Studio" className="h-14" width={56} height={56} />
-              <span className="font-heading text-lg gold-text font-semibold tracking-wide">CozyCoo Baby Studio</span>
-            </div>
+            <div className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="CozyCoo Baby Studio"
+    className="h-20 md:h-24 lg:h-28 object-contain"
+  />
+ <div className="flex flex-col overflow-visible">
+  <span className="signature-logo gold-text text-2xl">
+    Cozy Coo
+  </span>
+  <span className="signature-sub gold-text text-sm">
+    Baby Studio
+  </span>
+</div>
+</div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Premium baby photography studio in Kakinada. Newborn, maternity, kids photography and hand casting keepsakes.
             </p>

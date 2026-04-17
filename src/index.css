@@ -169,3 +169,33 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--gold) / 0.6);
 }
+@font-face {
+  font-family: 'BrittanySignature';
+  src: url('/src/assets/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.gold-text {
+  background: linear-gradient(135deg, #d4af37, #f5e6c4, #c6a77d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.signature-logo {
+  font-family: 'BrittanySignature', cursive;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  transform: scaleY(1.1); /* slight vertical stretch like Ambica */
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.signature-sub {
+  font-family: 'BrittanySignature', cursive;
+  font-size: 1.2rem;
+  margin-top: -5px;
+  letter-spacing: 2px;
+}
+.signature-logo {
+  text-shadow: 0 0 10px rgba(198, 167, 125, 0.3);
+}

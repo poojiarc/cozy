@@ -6,12 +6,17 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
+  host: true, // ✅ allows external access
+  port: 8080,
+
+  allowedHosts: [
+    "timmy-semimature-unpoisonously.ngrok-free.dev", // ✅ your ngrok URL
+  ],
+
+  hmr: {
+    overlay: false,
   },
+},
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {

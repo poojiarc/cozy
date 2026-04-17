@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <div className="space-y-6 lg:space-y-8">
               <div className="inline-block">
-                <span className="text-xs tracking-[0.3em] uppercase text-gold/80 font-body">Premium Baby Photography</span>
+                <span className="text-xs tracking-[0.3em] uppercase text-gold/80 font-body">Premium maternity & Newborn Photography</span>
                 <div className="h-px w-12 gold-gradient mt-2 mx-auto lg:mx-0" />
               </div>
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight">

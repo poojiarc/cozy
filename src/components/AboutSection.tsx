@@ -27,7 +27,7 @@ const AboutSection = () => {
               {[
                 { num: '4+', label: 'Years Experience' },
                 { num: '500+', label: 'Happy Families' },
-                { num: '1000+', label: 'Photos Delivered' },
+                { num: '10000+', label: 'Photos Delivered' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="font-heading text-2xl lg:text-3xl gold-text">{stat.num}</div>

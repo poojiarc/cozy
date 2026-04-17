@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         heading: ['"Playfair Display"', 'serif'],
         body: ['"Inter"', 'sans-serif'],
+        
+  signature: ['"BrittanySignature"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
