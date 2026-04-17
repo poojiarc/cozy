@@ -32,7 +32,7 @@ const Footer = () => {
               <a href="tel:9494700011" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Phone">
                 <Phone size={18} />
               </a>
-              <a href="https://www.instagram.com/cozycoo_babystudio?igsh=MTNidG56OXQ4dXJiYQ==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/cozycoo_babystudio?igsh=MTlyZWE1c2I5anpvZA==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
             </div>
